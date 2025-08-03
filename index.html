@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio | Desenvolvedor Front-End</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        .tech-icon {
+            transition: all 0.3s ease;
+        }
+        
+        .tech-icon:hover {
+            transform: translateY(-5px);
+        }
+        
+        .hero-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .section-title {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            width: 50%;
+            height: 4px;
+            bottom: -8px;
+            left: 0;
+            background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+            border-radius: 2px;
+        }
+        
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        
+        .floating {
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <!-- Navbar -->
+    <nav class="fixed w-full bg-white shadow-md z-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <span class="text-xl font-bold bg-gradient-to-r from-purple-600 to-blue-500 bg-clip-text text-transparent">Portfólio</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-purple-600 transition">Início</a>
+                    <a href="#about" class="text-gray-700 hover:text-purple-600 transition">Sobre</a>
+                    <a href="#skills" class="text-gray-700 hover:text-purple-600 transition">Habilidades</a>
+                    <a href="#contact" class="text-gray-700 hover:text-purple-600 transition">Contato</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="mobile-menu-button">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div class="mobile-menu hidden md:hidden bg-white shadow-lg">
+            <a href="#home" class="block py-2 px-4 text-sm hover:bg-gray-100">Início</a>
+            <a href="#about" class="block py-2 px-4 text-sm hover:bg-gray-100">Sobre</a>
+            <a href="#skills" class="block py-2 px-4 text-sm hover:bg-gray-100">Habilidades</a>
+            <a href="#contact" class="block py-2 px-4 text-sm hover:bg-gray-100">Contato</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-bg text-white pt-32 pb-20 md:pt-40 md:pb-28">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-4">Olá, eu sou <span class="bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-orange-500">[Kauã André]</span></h1>
+                    <h2 class="text-2xl md:text-3xl font-semibold mb-6">Desenvolvedor Front-End</h2>
+                    <p class="text-lg mb-8 text-gray-100 max-w-lg">
+                        Especialista em criar interfaces modernas, responsivas e com foco na melhor experiência do usuário. Transformo ideias em realidade digital com código limpo e eficiente.
+                    </p>
+                    <a href="https://wa.link/apfeg2" class="btn-primary text-white font-medium py-3 px-8 rounded-full inline-block">Vamos conversar</a>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <div class="relative w-64 h-64 md:w-80 md:h-80">
+                        <div class="absolute inset-0 bg-gradient-to-r from-purple-500 to-blue-500 rounded-full opacity-20 blur-xl"></div>
+                        <div class="relative floating">
+                            <img src="https://scontent-gig4-2.xx.fbcdn.net/v/t39.30808-6/484803673_2521810751491348_66273439089680249_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeFP_YF961sv1KV9XXHPbMBsiSDGz0CnfYKJIMbPQKd9ggth9H28oC4YTA1Im3ADasDveX3yjBsDVGI32BE05vtf&_nc_ohc=x7tNZiuYJi0Q7kNvwFLoneg&_nc_oc=Adnd9DOq2psekkdpRNodnlaH80k_xsxvkm2i-p2QHwdzl3ymhFW8lqFvXsWKrTbHuTPr7cSTjkiybuxRpFxgnTC9&_nc_zt=23&_nc_ht=scontent-gig4-2.xx&_nc_gid=MC1hjcTDAo6eh6X7F26g-Q&oh=00_AfRaiB_9oM9c7yGTj2RHgnFr5FQdzgH34qSJbY7gFSikRw&oe=68957A0B" alt="Desenvolvedor Front-End" class="rounded-full w-full h-full object-cover border-4 border-white shadow-xl">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="section-title text-3xl font-bold mb-12 text-center">Sobre Mim</h2>
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10">
+                    <p class="text-lg mb-6 text-gray-700">
+                        Sou um desenvolvedor front-end apaixonado por criar interfaces digitais que combinam beleza, funcionalidade e performance. Acredito que um bom design não é apenas sobre como algo parece, mas como funciona.
+                    </p>
+                    <p class="text-lg mb-6 text-gray-700">
+                        Minha abordagem combina atenção aos detalhes visuais com sólidos princípios de engenharia de software, resultando em produtos que são tanto agradáveis aos olhos quanto robustos em sua implementação.
+                    </p>
+                    <p class="text-lg text-gray-700">
+                        Com experiência em diversas tecnologias modernas, meu objetivo é sempre entregar soluções que superem as expectativas dos usuários e clientes.
+                    </p>
+                </div>
+                <div class="md:w-1/2">
+                    <div class="bg-gradient-to-r from-purple-100 to-blue-100 p-8 rounded-xl shadow-lg">
+                        <h3 class="text-xl font-semibold mb-4 text-gray-800">Minha Filosofia</h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <div class="bg-purple-500 p-2 rounded-full mr-4 mt-1">
+                                    <i class="fas fa-check text-white text-xs"></i>
+                                </div>
+                                <span class="text-gray-700">Design centrado no usuário em primeiro lugar</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="bg-purple-500 p-2 rounded-full mr-4 mt-1">
+                                    <i class="fas fa-check text-white text-xs"></i>
+                                </div>
+                                <span class="text-gray-700">Código limpo, modular e bem documentado</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="bg-purple-500 p-2 rounded-full mr-4 mt-1">
+                                    <i class="fas fa-check text-white text-xs"></i>
+                                </div>
+                                <span class="text-gray-700">Performance otimizada em todos os dispositivos</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="bg-purple-500 p-2 rounded-full mr-4 mt-1">
+                                    <i class="fas fa-check text-white text-xs"></i>
+                                </div>
+                                <span class="text-gray-700">Aprendizado contínuo e acompanhamento das tendências</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="section-title text-3xl font-bold mb-12 text-center">Minhas Habilidades</h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+                <!-- HTML -->
+                <div class="tech-icon bg-white p-6 rounded-xl shadow-md hover:shadow-lg text-center transition-all">
+                    <div class="text-5xl text-orange-500 mb-3">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <h3 class="font-semibold text-lg">HTML5</h3>
+                </div>
+                
+                <!-- CSS -->
+                <div class="tech-icon bg-white p-6 rounded-xl shadow-md hover:shadow-lg text-center transition-all">
+                    <div class="text-5xl text-blue-500 mb-3">
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                    <h3 class="font-semibold text-lg">CSS3</h3>
+                </div>
+                
+                <!-- JavaScript -->
+                <div class="tech-icon bg-white p-6 rounded-xl shadow-md hover:shadow-lg text-center transition-all">
+                    <div class="text-5xl text-yellow-500 mb-3">
+                        <i class="fab fa-js"></i>
+                    </div>
+                    <h3 class="font-semibold text-lg">JavaScript</h3>
+                </div>
+                
+                <!-- React -->
+                <div class="tech-icon bg-white p-6 rounded-xl shadow-md hover:shadow-lg text-center transition-all">
+                    <div class="text-5xl text-blue-400 mb-3">
+                        <i class="fab fa-react"></i>
+                    </div>
+                    <h3 class="font-semibold text-lg">React.js</h3>
+                </div>
+                
+                <!-- Bootstrap -->
+                <div class="tech-icon bg-white p-6 rounded-xl shadow-md hover:shadow-lg text-center transition-all">
+                    <div class="text-5xl text-purple-600 mb-3">
+                        <i class="fab fa-bootstrap"></i>
+                    </div>
+                    <h3 class="font-semibold text-lg">Bootstrap</h3>
+                </div>
+                
+                <!-- Tailwind -->
+                <div class="tech-icon bg-white p-6 rounded-xl shadow-md hover:shadow-lg text-center transition-all">
+                    <div class="text-5xl text-blue-500 mb-3">
+                        <i class="fas fa-wind"></i>
+                    </div>
+                    <h3 class="font-semibold text-lg">Tailwind CSS</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="section-title text-3xl font-bold mb-12 text-center">Vamos Trabalhar Juntos</h2>
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10">
+                    <h3 class="text-xl font-semibold mb-4">Entre em Contato</h3>
+                    <p class="text-gray-700 mb-6">
+                        Estou sempre aberto a novas oportunidades e projetos desafiadores. Se você tem uma ideia ou projeto que gostaria de discutir, não hesite em entrar em contato.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <div class="bg-purple-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-envelope text-purple-600"></i>
+                            </div>
+                            <span class="text-gray-700">kauaprogamadorprofissional@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <div class="bg-gray-50 p-8 rounded-xl shadow-md">
+                        <h3 class="text-xl font-semibold mb-6">Minhas Redes</h3>
+                        <div class="flex space-x-4">
+                            <a href="https://www.linkedin.com/in/kaua-andr%C3%A9-fonseca-68b830341/" class="bg-gray-200 hover:bg-blue-600 hover:text-white w-12 h-12 rounded-full flex items-center justify-center transition">
+                                <i class="fab fa-linkedin-in text-xl"></i>
+                            </a>
+                            <a href="https://github.com/kauadevclub" class="bg-gray-200 hover:bg-gray-900 hover:text-white w-12 h-12 rounded-full flex items-center justify-center transition">
+                                <i class="fab fa-github text-xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <p>&copy; 2023 [Kauã André]. Todos os direitos reservados.</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="hover:text-purple-400 transition"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="hover:text-purple-400 transition"><i class="fab fa-github"></i></a>
+                    <a href="#" class="hover:text-purple-400 transition"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.querySelector('.mobile-menu-button');
+        const mobileMenu = document.querySelector('.mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+        
+        // Add shadow to navbar on scroll
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('shadow-lg');
+            } else {
+                nav.classList.remove('shadow-lg');
+            }
+        });
+    </script>
+</body>
+</html>
