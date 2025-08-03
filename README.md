@@ -15,7 +15,7 @@ Bem-vindo ao meu portfólio profissional! Este projeto foi criado com o objetivo
 
 Você pode ver o portfólio publicado clicando no link abaixo:
 
-[🔗 Acessar Portfólio](https://seu-usuario.github.io/seu-repositorio)
+[https://kauadevclub.github.io/meuportifolio-profissional/)
 
 ## 📄 Sobre o Projeto
 
@@ -31,7 +31,7 @@ Meu objetivo com este portfólio é demonstrar minhas capacidades e estar dispon
 
 ## 📬 Contato
 
-Entre em contato comigo através do [LinkedIn](https://linkedin.com/in/seu-usuario) ou pelo e-mail: `seuemail@exemplo.com`.
+Entre em contato comigo através do [https://www.linkedin.com/in/kaua-andr%C3%A9-fonseca-68b830341/) 
 
 ---
 
